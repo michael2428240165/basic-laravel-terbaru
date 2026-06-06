@@ -5,7 +5,7 @@ use App\Http\Controllers\FakultasController;
 use App\Http\Controllers\ProdiController;
 
 Route::get('/', function () {
-    return redirect('/fakultas');
+    return view('auth.register');
 });
 
 Route::resource('fakultas', FakultasController::class);
